@@ -50,7 +50,6 @@ const CompletedTask: React.FC = () => {
         console.error(`Error: ${response.status}`, errorBody);
         return;
       }
-
       fetchCompletedTasks();
     } catch (error) {
       console.error('Failed to delete task:', error);
